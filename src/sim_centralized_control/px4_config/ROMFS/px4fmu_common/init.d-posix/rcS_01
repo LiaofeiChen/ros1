@@ -1,0 +1,23 @@
+#!/bin/sh
+
+# set MAV_SYS_ID 1
+# set MAV_COMP_ID 1
+
+# sh /etc/init.d/rc.sensors
+# sh /etc/init.d/rc.control
+# sh /etc/init.d/rc.flight_modes
+# sh /etc/init.d/rc.comms
+# sh /etc/init.d/rc.logging
+# sh /etc/init.d/rc.calibration
+
+# mavlink start -d /dev/udp/localhost:11101 -b 921600 -m onboard -r 40000
+
+# 推荐使用 PX4 SITL 支持的命令（在 rcS 中直接写模块启动指令）
+param set SYS_AUTOSTART 4010
+param set MAV_SYS_ID 1
+
+simulator start
+sensors start
+commander start
+navigator start
+mavlink start -d /dev/udp/127.0.0.1:11101

@@ -1,0 +1,2 @@
+pypkg01_multi_agent:sim_centralized_control
+-DCATKIN_DEVEL_PREFIX=/home/rosuser_docs/ROS/ROSProject/UAV/ros1_quad/ros1_quad_ws/devel -DCMAKE_INSTALL_PREFIX=/home/rosuser_docs/ROS/ROSProject/UAV/ros1_quad/ros1_quad_ws/install -G Unix Makefiles

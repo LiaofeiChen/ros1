@@ -1,0 +1,8 @@
+prefix=/home/rosuser_docs/ROS/ROSProject/UAV/ros1_quad/ros1_quad_ws/devel
+
+Name: sim_centralized_control
+Description: Description of sim_centralized_control
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

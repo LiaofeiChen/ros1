@@ -1,0 +1,5 @@
+<launch>
+    <!-- <include file="$(find vrpn_client_ros)/launch/sample.launch"/> -->
+    <node pkg="pypkg01_multi_agent" type="test01.py" name="test01" output="screen" />
+    <node pkg="rviz" type="rviz" name="rviz" output="screen" args="-d $(find pypkg01_multi_agent)/rviz/config.rviz"/>
+</launch>

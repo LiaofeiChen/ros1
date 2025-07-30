@@ -1,0 +1,51 @@
+<launch>
+  <arg name="ip_prefix" default="192.168.0."/>
+  
+  <group ns="quad0101">
+    <include file="$(find mavros)/launch/px4.launch">
+      <arg name="fcu_url" value="udp://@$(arg ip_prefix)101:11101"/>
+      <arg name="gcs_url" value="udp://@0.0.0.0:11101"/>
+      <arg name="tgt_system" value="1"/>
+    </include>
+  </group>
+
+  <group ns="quad0102">
+    <include file="$(find mavros)/launch/px4.launch">
+      <arg name="fcu_url" value="udp://@$(arg ip_prefix)102:11102"/>
+      <arg name="gcs_url" value="udp://@0.0.0.0:11102"/>
+      <arg name="tgt_system" value="2"/>
+    </include>
+  </group>
+
+  <group ns="quad0103">
+    <include file="$(find mavros)/launch/px4.launch">
+      <arg name="fcu_url" value="udp://@$(arg ip_prefix)103:11103"/>
+      <arg name="gcs_url" value="udp://@0.0.0.0:11103"/>
+      <arg name="tgt_system" value="3"/>
+    </include>
+  </group>
+
+  <group ns="quad0104">
+    <include file="$(find mavros)/launch/px4.launch">
+      <arg name="fcu_url" value="udp://@$(arg ip_prefix)104:11104"/>
+      <arg name="gcs_url" value="udp://@0.0.0.0:11104"/>
+      <arg name="tgt_system" value="4"/>
+    </include>
+  </group>
+
+  <group ns="quad0105">
+    <include file="$(find mavros)/launch/px4.launch">
+      <arg name="fcu_url" value="udp://@$(arg ip_prefix)105:11105"/>
+      <arg name="gcs_url" value="udp://@0.0.0.0:11105"/>
+      <arg name="tgt_system" value="5"/>
+    </include>
+  </group>
+
+  <group ns="quad0106">
+    <include file="$(find mavros)/launch/px4.launch">
+      <arg name="fcu_url" value="udp://@$(arg ip_prefix)106:11106"/>
+      <arg name="gcs_url" value="udp://@0.0.0.0:11106"/>
+      <arg name="tgt_system" value="6"/>
+    </include>
+  </group>
+</launch>

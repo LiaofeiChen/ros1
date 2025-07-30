@@ -1,0 +1,8 @@
+prefix=/home/rosuser_docs/ROS/ROSProject/UAV/ros1_quad/ros1_quad_ws/devel
+
+Name: pypkg01_multi_agent
+Description: Description of pypkg01_multi_agent
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
